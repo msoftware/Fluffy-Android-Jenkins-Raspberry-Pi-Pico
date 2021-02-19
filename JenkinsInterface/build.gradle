@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'com.jentsch.raspberry.pi.pico'
+version '1.0-SNAPSHOT'
+
+mainClassName = 'com.jentsch.raspberry.pi.pico.Main'
+
+sourceCompatibility = 1.11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    implementation 'com.fazecast:jSerialComm:[2.0.0,3.0.0)'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    implementation 'com.offbytwo.jenkins:jenkins-client:0.3.8'
+    implementation group: 'org.apache.commons', name: 'commons-configuration2', version: '2.7'
+    implementation group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.4'
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
+}
