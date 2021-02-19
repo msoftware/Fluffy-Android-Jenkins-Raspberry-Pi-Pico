@@ -10,4 +10,6 @@ MicroPython contains the MicroPython code for the Raspberry PI Pico. You can ins
 ## JenkinsInterface
 JenkinsInterface contains the java application to start a jenkins job by pressing the button and show reaction if jenkins build is SUCCESS or not ....
 
+## Picture
 
+![Fluffy Android](fluffy-android.jpg)
